@@ -9,6 +9,7 @@ public class countdigits {
         int count=0;
         int temp=n;
         int val=n;
+        System.out.println("n value is " + n);
         int rem;
         while(temp!=0){
            rem=temp%10;
