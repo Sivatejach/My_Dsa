@@ -13,9 +13,9 @@ public class countdigits {
         int rem;
         while(temp!=0){
            rem=temp%10;
-           if(val%rem==0){
-               count++;
-              }
+           if (rem != 0 && val % rem == 0) {  // Avoid division by zero
+            count++;
+        }
             temp=temp/10;
         }
         System.out.println("The number of digits that divide " + n + " is: " + count);
