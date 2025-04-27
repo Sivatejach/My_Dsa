@@ -8,6 +8,7 @@ class IndexOfFirstOcc  {
         String needle = sc.nextLine();
         int index = haystack.indexOf(needle);
 
-        System.out.println(index); /
+        System.out.println(index); 
+        sc.close();
     }
 }
