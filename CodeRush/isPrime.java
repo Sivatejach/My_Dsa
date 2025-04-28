@@ -17,7 +17,7 @@ class isPrime {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number: ");
         int n = sc.nextInt(); //29
-        System.out.println(n+" isPrime? :  "+num(n));
+        System.out.println(n+" isPrime ? :"+num(n));
         sc.close();
     }
 }
