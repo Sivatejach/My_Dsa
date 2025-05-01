@@ -1,5 +1,13 @@
 
 
+#Sample Input/Output
+# 3
+
+# 1
+# 1 2
+# 1 2 3
+
+
 n=int(input("Enter the number of elements in the list: "))
 strval=""
 for i in range(1,n+1):

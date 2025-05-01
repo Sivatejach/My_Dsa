@@ -1,4 +1,11 @@
 
+#Sample Input/Output:
+# 3
+
+# 1 2 3
+# 1 2
+# 1
+
 
 
 n=int(input("Enter the number of elements in the list: "))
