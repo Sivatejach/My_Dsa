@@ -1,0 +1,12 @@
+#Sample Input:
+# 3
+#Sample Output:
+#         * * * * *
+#           * * *
+#             * 
+
+
+n=int(input("Enter the number of elements in the list: "))
+
+for i in range(2*n-1,0,-2):
+    print(" "*(2*n-i-1)+"*"*i+" "*(2*n-i-1))
