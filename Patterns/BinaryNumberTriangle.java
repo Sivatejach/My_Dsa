@@ -12,6 +12,16 @@ package Patterns;
 // Print ‘0’
 // ‘Num’++
 
+
+
+//Sample Input:
+// 5
+// Sample Output:
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
 import java.util.Scanner;
 
 public class BinaryNumberTriangle {
