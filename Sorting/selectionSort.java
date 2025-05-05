@@ -2,12 +2,21 @@
 // Selection Sort in Java
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)
-//Selection Sort Woeking:
-// 1. Find the minimum element in the array and swap it with the first element.
-// 2. Find the minimum element in the remaining array and swap it with the second element.
+
+
+//Ietrative Selection Sort
+// 1. Iterate through the array and find the minimum element in the unsorted part of the array.
+// 2. Swap the found minimum element with the first element of the unsorted part of the array.
 // 3. Repeat the process for the rest of the array until the array is sorted.
 // 4. The array is sorted when all elements are in their correct position.
 
+//Sample Input:
+// 5 4 3 2 1
+//Sample Output:
+// 1 2 3 4 5
+
+
+// Java program to implement selection sort
 import java.util.Scanner;
 
 
