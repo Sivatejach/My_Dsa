@@ -15,19 +15,19 @@ public class selectionSort{
 
     public static void SelectionSort(int[] arr, int n)
     {
-        int minIndex;
-        for (int i = 0; i <= n - 2; i++) {
-            minIndex = i;
-            for (int j = i; j <= n-1; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
+        int minindex;
+        int temp;
+        for(int i=0;i<n-1;i++){
+            minindex=i;
+            for(int j=i+1;j<n;j++){
+                if(arr[j]<arr[minindex]){
+                    minindex=j;
                 }
+                temp=arr[minindex];
+                arr[minindex]=arr[i];
+                arr[i]=temp;
             }
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
-        }
-    }
+        }    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of elements in the array: ");
