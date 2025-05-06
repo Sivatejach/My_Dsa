@@ -20,12 +20,12 @@ class Child extends Parent{
     String schoolName;
     String grade;
     public Child(String name, int age, String address, String schoolName, String grade) {
-        super(name, age, address); // Call the constructor of the parent class
+        super(name, age, address); 
         this.schoolName = schoolName;
         this.grade = grade;
     }
     public void displayInfo() {
-        super.displayInfo(); // Call the displayInfo method of the parent class
+        super.displayInfo(); 
         System.out.println("School Name: " + schoolName);
         System.out.println("Grade: " + grade);
     }
