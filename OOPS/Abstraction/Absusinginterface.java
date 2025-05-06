@@ -1,24 +1,19 @@
 package OOPS.Abstraction;
 
-
-abstract class Vehicle {
-    abstract void startEngine();
-    void fuel() {
-        System.out.println("Fueling the vehicle...");
-    }
+interface Animal {
+    void makeSound(); // abstract method
 }
 
-class Car extends Vehicle {
+class Dog implements Animal {
     @Override
-    void startEngine() {
-        System.out.println("Car engine started.");
+    public void makeSound() {
+        System.out.println("Dog barks.");
     }
 }
 
 public class Absusinginterface {
     public static void main(String[] args) {
-        Vehicle myCar = new Car();
-        myCar.startEngine(); // Abstract method implemented
-        myCar.fuel();         // Concrete method from abstract class
+        Animal myDog = new Dog();
+        myDog.makeSound(); 
     }
 }
