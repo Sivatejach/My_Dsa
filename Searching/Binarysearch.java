@@ -37,5 +37,6 @@ public class Binarysearch {
         } else {
             System.out.println("Element found at index: " + result);
         }
+        sc.close();
     }
 }
