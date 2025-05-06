@@ -26,6 +26,8 @@ class Dog extends Animal{
         System.out.println("Dog eats dog food");
     }
 }
+
+
 public class ParentNChild {
     public static void main(String[] args) {
         Animal animal = new Animal();
