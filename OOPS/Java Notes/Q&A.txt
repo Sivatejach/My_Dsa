@@ -59,7 +59,7 @@ public class PredicateExample {
 
 
 
- Lambda Function in Java and Python
+Lambda Function in Java and Python
 Java:
 A lambda expression is a shorthand for implementing a functional interface.
 
