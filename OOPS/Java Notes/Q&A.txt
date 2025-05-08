@@ -1,0 +1,140 @@
+
+
+
+Basic Data Structure Related Questions
+What is an Array?
+A collection of elements stored in contiguous memory, indexed-based.
+
+What is a LinkedList?
+A sequence of nodes where each node points to the next. It allows dynamic memory allocation.
+
+What is a Stack?
+Follows LIFO (Last In First Out) – like a pile of books. Methods: push(), pop(), peek().
+
+What is a Queue?
+Follows FIFO (First In First Out) – like people in a line. Methods: add(), remove(), peek().
+
+Difference between Array and ArrayList?
+
+Arrays are fixed size, ArrayLists are resizable.
+
+Arrays can hold primitives; ArrayLists can only hold objects.
+
+
+
+
+
+Explain Treeify in Java
+Treeify refers to converting a HashMap bucket (which is a LinkedList) into a Red-Black Tree when the number of entries in a bucket exceeds a certain threshold (typically 8).
+
+This improves lookup performance from O(n) to O(log n) in case of hash collisions.
+
+Why?
+To reduce the time complexity of get()/put() operations in high-collision scenarios.
+
+
+
+
+
+
+
+Explain Predicates in Java
+Predicate is a functional interface introduced in Java 8 (in java.util.function package).
+
+It represents a boolean-valued function of one argument.
+|import java.util.function.Predicate;
+
+public class PredicateExample {
+    public static void main(String[] args) {
+        Predicate<Integer> isEven = num -> num % 2 == 0;
+        System.out.println(isEven.test(10)); // true
+        System.out.println(isEven.test(13)); // false
+    }
+}
+
+
+
+
+
+
+
+
+ Lambda Function in Java and Python
+Java:
+A lambda expression is a shorthand for implementing a functional interface.
+
+java
+(a, b) -> a + b
+Example with Predicate:
+java:
+Predicate<Integer> isEven = x -> x % 2 == 0;
+
+Python:
+Anonymous function defined using lambda keyword.
+python:
+add = lambda x, y: x + y
+print(add(2, 3))  # Output: 5
+
+
+
+
+
+
+
+
+append() vs extend() in Python
+append() adds one item to the end of a list:
+
+python
+l = [1, 2]
+l.append([3, 4])
+print(l)  # [1, 2, [3, 4]]
+extend() adds each item from an iterable to the list:
+
+python
+l = [1, 2]
+l.extend([3, 4])
+print(l)  # [1, 2, 3, 4]
+
+
+
+
+
+
+ Python Program to Sort and Merge Two Lists
+
+list1 = [4, 2, 7]
+list2 = [5, 1, 3]
+
+# Merge
+merged = list1 + list2
+
+# Sort
+merged.sort()
+
+print("Merged and Sorted List:", merged)
+
+
+
+
+
+
+SQL Joins:
+SELECT e.name, d.name
+FROM employee e
+INNER JOIN department d ON e.dept_id = d.id;
+
+
+
+ DELETE vs TRUNCATE in SQL
+DELETE:
+- Removes rows based on a condition.
+- Can be rolled back.
+- Slower for large datasets.
+- Triggers are fired.
+
+TRUNCATE:
+- Removes all rows from a table.
+- Cannot be rolled back.
+- Faster for large datasets.
+- Does not fire triggers.
