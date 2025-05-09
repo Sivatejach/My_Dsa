@@ -15,9 +15,7 @@ What is a Queue?
 Follows FIFO (First In First Out) – like people in a line. Methods: add(), remove(), peek().
 
 Difference between Array and ArrayList?
-
 Arrays are fixed size, ArrayLists are resizable.
-
 Arrays can hold primitives; ArrayLists can only hold objects.
 
 
@@ -25,7 +23,8 @@ Arrays can hold primitives; ArrayLists can only hold objects.
 
 
 Explain Treeify in Java
-Treeify refers to converting a HashMap bucket (which is a LinkedList) into a Red-Black Tree when the number of entries in a bucket exceeds a certain threshold (typically 8).
+
+
 
 This improves lookup performance from O(n) to O(log n) in case of hash collisions.
 
@@ -138,3 +137,103 @@ TRUNCATE:
 - Cannot be rolled back.
 - Faster for large datasets.
 - Does not fire triggers.
+
+
+
+
+A copy constructor is a special constructor used to create a new object by copying another object of the same class.
+
+class Student {
+    String name;
+    int age;
+
+    // Parameterized constructor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Copy constructor
+    Student(Student s) {
+        this.name = s.name;
+        this.age = s.age;
+    }
+
+    void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student("Alice", 20);
+        Student s2 = new Student(s1);  // Using copy constructor
+
+        s1.display();  // Name: Alice, Age: 20
+        s2.display();  // Name: Alice, Age: 20
+    }
+}
+
+
+
+
+
+stRINGbUILDER AND stringBuffer
+Both StringBuilder and StringBuffer are mutable classes in Java used to create and manipulate strings more efficiently than String when many modifications (like append, insert, delete) are needed.
+
+🔹 StringBuffer:
+A thread-safe, mutable sequence of characters.
+
+All methods are synchronized, so it is safe to use in multi-threaded programs.
+
+However, due to synchronization, it's a bit slower than StringBuilder.
+
+Example:
+java
+Copy
+Edit
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" Java");
+System.out.println(sb);  // Output: Hello Java
+🔹 StringBuilder:
+A non-thread-safe, mutable sequence of characters.
+
+Methods are not synchronized, making it faster than StringBuffer in single-threaded environments.
+
+Introduced in Java 1.5.
+
+Example:
+java
+Copy
+Edit
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb);  // Output: Hello World
+
+
+
+
+
+throw is for actually throwing an exception.
+throws is for declaring potential exceptions a method might throw.
+
+public class ThrowThrowsExample {
+
+    // Method that declares it might throw an exception
+    static void validateAge(int age) throws IllegalArgumentException {
+        if (age < 18) {
+            // Actually throwing an exception
+            throw new IllegalArgumentException("Age must be 18 or above");
+        } else {
+            System.out.println("Access granted - Age is valid!");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            validateAge(16);  // This will throw an exception
+        } catch (IllegalArgumentException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+    }
+}
