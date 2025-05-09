@@ -12,7 +12,7 @@ import java.util.HashMap;
 // the default capacity is 16
 
 // working
-// Hashing is process of converting an bject into fixed size integer value using the hashCode() method
+// Hashing is process of converting an Object into fixed size integer value using the hashCode() method
 // HashMap is an array of buckets. Each bucket can hold one or more entry(key-value pairs).
 // equals() method : this method is used to identify wheather 2 objects are equal or not
 
