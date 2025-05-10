@@ -4,6 +4,7 @@
 
 package CollectionFramework;
 import java.util.HashMap;
+import java.util.Iterator;
 
 // it is implemented class of Map Interface
 // the underlying data stricture is hash table
@@ -42,6 +43,12 @@ public class Hashmapsample {
 
         for(String val : map.values()) {
             System.out.println(val);
+        }
+
+        Iterator<Integer> it = map.keySet().iterator();
+        while(it.hasNext()) {
+            Integer key = it.next();
+            System.out.println(key + " : " + map.get(key));
         }
 
         map.forEach((k, v) -> System.out.println(k + " == " + v));
