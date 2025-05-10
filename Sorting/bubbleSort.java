@@ -17,7 +17,7 @@ import java.util.*;
 public class bubbleSort{
     public static void BubbleSort(int[] arr, int n) {
         int temp;
-        for(int i=n-1;i>=1;i--){
+        for(int i=n-1;i>0;i--){
             for(int j=0;j<i;j++){
                 if(arr[j]>arr[j+1]){
                     temp=arr[j];
