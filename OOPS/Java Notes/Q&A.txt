@@ -142,7 +142,7 @@ TRUNCATE:
 
 
 A copy constructor is a special constructor used to create a new object by copying another object of the same class.
-
+In this process we pass the created object as a paraameter to new object snd itrt calls the copy constructor.
 class Student {
     String name;
     int age;

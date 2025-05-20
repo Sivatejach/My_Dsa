@@ -3,8 +3,10 @@
 
 
 package CollectionFramework;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 // it is implemented class of Map Interface
 // the underlying data stricture is hash table
@@ -52,6 +54,18 @@ public class Hashmapsample {
         }
 
         map.forEach((k, v) -> System.out.println(k + " == " + v));
+        
+        
+        List<Integer> al=new ArrayList<>();
+        al.add(1);
+        al.add(2);
+        al.add(3);
+
+        it=al.iterator();
+        while(it.hasNext()) {
+            Integer i=it.next();
+            System.out.println(i);
+        }
      }
 }
 
