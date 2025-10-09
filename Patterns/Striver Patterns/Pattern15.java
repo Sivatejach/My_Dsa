@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Pattern14 {
+public class Pattern15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of rows:");
@@ -8,7 +8,7 @@ public class Pattern14 {
         char ch;
         for(int i=0;i<n;i++){
             ch='A';
-            for(int j=0;j<=i;j++){
+            for(int j=n-1;j>=i;j--){
                 System.out.print(ch+" ");
                 ch++;
                 if(ch>'Z')
