@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class gcdorhcf {
     public static int gcd(int a, int b) {
+        //Swapping to make sure a is the smaller number
         if(a>b){
             int temp=a;
             a=b;
