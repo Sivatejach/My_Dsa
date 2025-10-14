@@ -8,17 +8,15 @@ import java.util.Scanner;
 
 public class EuclidianAlgo {
     public static int gcd(int a, int b) {
-        if(b == 0) {
-            return a;
+       while(a > 0 && b>0){
+        if(a>b){
+            a=a%b;
+        } else{
+            b=b%a;
         }
-        else if(a == 0) {
-            return b;
-        }
-        else if(a > b) {
-            return gcd(b, a % b);
-        } else {
-            return gcd(a, b % a);
-        }
+       }
+       if(a==0) return b;
+       else return a;
 
     }
 
