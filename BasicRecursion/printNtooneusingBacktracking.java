@@ -2,13 +2,13 @@ package BasicRecursion;
 
 public class printNtooneusingBacktracking {
     public static void main(String[] args) {
-        int n = 5; // Example input
-        printNtoOne(n);
+        int n = 5; 
+        printNtoOne(1,n);
     }
 
-    public static void printNtoOne(int n) {
-        if(n==0) return;
-        printNtoOne(n-1);
-        System.out.println(n);
+    public static void printNtoOne(int i,int n) {
+        if(i>n) return;
+        printNtoOne(i+1,n);
+        System.out.println(i);
     }
 }
