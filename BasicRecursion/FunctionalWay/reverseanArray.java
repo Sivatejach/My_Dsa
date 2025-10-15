@@ -1,7 +1,7 @@
 package BasicRecursion.FunctionalWay;
 
 
-public class reverseanArrsy {
+public class reverseanArray {
     static int n=5;
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
@@ -10,7 +10,7 @@ public class reverseanArrsy {
         for(int i=0; i<n; i++) {
             System.out.print(arr[i] + " ");
         }
-        reverseanArray(arr,0,n-1);
+        reverseanArrayusingfunctioncall(arr,0,n-1);
         System.out.println();
         System.out.println("Reversed array using two pointers: ");
         for(int i=0; i<n; i++) {
@@ -32,7 +32,7 @@ public class reverseanArrsy {
 
     }
     //In the below function the array will not be reversed because we are swapping the values of a and b but not the values in the array
-    public static void reverseanArray(int[] arr,int l,int r){
+    public static void reverseanArrayusingfunctioncall(int[] arr,int l,int r){
         while(l<r){
             swap(arr, l, r);
             l++;
