@@ -1,4 +1,4 @@
-package Hashing;
+package HashingConcept;
 
 import java.util.Scanner;
 
