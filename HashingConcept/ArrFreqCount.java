@@ -52,6 +52,7 @@ public class ArrFreqCount {
         UsingTwoLoops(arr);
         System.out.println("Using HashMap:");
         UsingHashMap(arr);
+        sc.close();
     }
     
 }
