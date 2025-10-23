@@ -1,9 +1,10 @@
 package HashingConcept;
 
 import java.util.Scanner;
-
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+
 
 public class ArrFreqCount {
     public static  void UsingTwoLoops(int[] arr) {
@@ -33,7 +34,7 @@ public class ArrFreqCount {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }
 
-        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+        for (Entry<Integer, Integer> entry : freqMap.entrySet()) {
             System.out.println(entry.getKey() + " occurs " + entry.getValue() + " times");
         }
     }

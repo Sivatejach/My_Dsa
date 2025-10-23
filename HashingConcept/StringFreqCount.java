@@ -1,5 +1,7 @@
 package HashingConcept;
 
+import java.util.HashMap;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class StringFreqCount {
@@ -16,6 +18,15 @@ public class StringFreqCount {
             if (freq[i] > 0) {
                 System.out.println((char)i + ": " + freq[i]);
             }
+        }
+
+        System.out.println("Using HashMap:");
+        HashMap<Character, Integer> charCountMap = new HashMap<>();
+        for (int i = 0; i < str.length(); i++) {
+            charCountMap.put(str.charAt(i), charCountMap.getOrDefault(str.charAt(i), 0) + 1);
+        }
+        for (Entry<Character, Integer> entry : charCountMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
         }
         sc.close();
     }
