@@ -1,5 +1,15 @@
 package BasicRecursion;
 
+
+//Problem statment
+// Given a string s, we can replace at most one character in s with any other character.
+// Return true if we can make s a palindrome after the replacement, or false otherwise.
+// A palindrome is a string that reads the same forward and backward.
+// Example 1: "abca" can become "abba" by replacing 'c' with 'b'
+// Example 2: "abc" cannot become a palindrome with just one replacement
+// Example 3: "racecar" is already a palindrome
+// Example 4: "deeee" can become "eeeee" by replacing 'd' with 'e'
+// Example 5: "a" is already a palindrome
 import java.util.*;
 public class PalindromewithTwist {
     static List<Integer> al=new ArrayList<>();
